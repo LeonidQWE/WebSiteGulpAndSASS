@@ -1,0 +1,22 @@
+{
+  "name": "websitegulpandsass",
+  "version": "1.0.0",
+  "description": "My test gulp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonidQWE/WebSiteGulpAndSASS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonidQWE/WebSiteGulpAndSASS/issues"
+  },
+  "homepage": "https://github.com/LeonidQWE/WebSiteGulpAndSASS#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
