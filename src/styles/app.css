@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #934c4c;
+}
+.block__text {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.block__link {
+  color: #000;
+  text-decoration: none;
+}
+.block__title {
+  color: red;
+}/*# sourceMappingURL=app.css.map */
