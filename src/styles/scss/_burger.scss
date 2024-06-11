@@ -1,0 +1,65 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 460px) {
+  .burger {
+    display: block;
+
+    &__btn {
+      background-color: transparent;
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      & > div {
+        width: 2.5rem;
+        height: 0.2rem;
+        border-radius: 1rem;
+        background-color: #fff;
+      }
+    }
+
+    &__menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #000;
+      padding: 6rem 4rem;
+
+      &_display-block {
+        display: block;
+      }
+    }
+
+    &__close-btn {
+      background-color: transparent;
+      border: 1px solid transparent;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__item {
+      padding: 1rem 0;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 2rem;
+      line-height: 130%;
+    }
+  }
+}

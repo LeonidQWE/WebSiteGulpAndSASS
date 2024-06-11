@@ -34,6 +34,7 @@
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
 
     & > div:not(:last-child) {
       border-right: 1px solid #ffffff33;
@@ -96,5 +97,32 @@
   }
 }
 
+@media (max-width: 460px) {
+  .footer {
+    &__content {
+      & > div:not(:last-child) {
+        border-right: 1px solid none;
+        border-bottom: 1px solid #ffffff33;
+      }
+    }
 
+    &__info {
+      flex: 0 1 100%;
+    }
+
+    &__links {
+      &_size-sm {
+        flex: 0 1 100%;
+      }
+
+      &_size-md {
+        flex: 0 1 100%;
+      }
+
+      &_size-bg {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
 
