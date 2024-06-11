@@ -1,0 +1,30 @@
+.navbar {
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    padding: 1rem 2rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 120%;
+
+    &:active {
+      color: red;
+    }
+  }
+}
+
+

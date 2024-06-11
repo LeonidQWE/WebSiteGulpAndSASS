@@ -1,0 +1,34 @@
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &_size-full {
+      flex: 0 1 100%;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      color: #ff0000;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+  }
+}
+

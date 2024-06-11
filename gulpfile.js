@@ -32,7 +32,7 @@ const paths = {
     dest: 'dist/'
   },
   styles: {
-    src: 'src/styles/**/*.scss',
+    src: 'src/styles/scss/**/*.scss',
     dest: 'dist/css/',
   },
   scripts: {
@@ -100,14 +100,14 @@ function scripts () {
 
 async function img () {
   imagecomp(
-    // берём все изображения из папки источника
+    // take all the images from the source folder
     paths.images.src,
-    // выгружаем оптимизированные изображения в папку назначения
+    // upload optimized images to the destination folder
     paths.images.dest,
-    // настраиваем основные параметры
+    // configure basic parameters
     { compress_force: false, statistic: true, autoupdate: true },
     false,
-    // сжимаем и оптимизируем изображеня
+    // compress and optimize images
     { jpg: { engine: "mozjpeg", command: ["-quality", "75"] } },
     { png: { engine: "pngquant", command: ["--quality=75-100", "-o"] } },
     { svg: { engine: "svgo", command: "--multipass" } },

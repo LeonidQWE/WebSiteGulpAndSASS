@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  min-width: 23rem;
+
+  &_bg-color-black {
+    background-color: #000;
+  }
+
+  &_padding-x-sm {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &_padding-x-md {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  &_padding-x-bg {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  &_padding-y-sm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &_padding-y-md {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &_padding-y-bg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

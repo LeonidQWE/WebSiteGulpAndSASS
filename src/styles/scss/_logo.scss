@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  gap: 0.6rem;
+
+  &__img {
+    width: clamp(4rem, 10vw, 6.2rem);
+    height: clamp(4rem, 10vw, 6.2rem);
+  }
+
+  &__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 110%;
+  }
+}
