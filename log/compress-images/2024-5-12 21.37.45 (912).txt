@@ -1,0 +1,7 @@
+File from: [src/images/phoneCardImg.jpg.crdownload]
+
+File to: [dist/images/phoneCardImg.jpg.crdownload]
+
+Compression algorithm: [-]
+
+Description: File does not exist!

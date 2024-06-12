@@ -1,8 +1,0 @@
-File from: [src/images/solarCardImg.png]
-
-File to: [dist/images/solarCardImg.png]
-
-Compression algorithm: [pngquant]
-
-Description: Error: Command failed: C:\Leonid\Proga\Frontend\WebSiteGulpAndSASS\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o dist/images/solarCardImg.png src/images/solarCardImg.png
-  error: failed writing image to dist/images/solarCardImg.png (16)

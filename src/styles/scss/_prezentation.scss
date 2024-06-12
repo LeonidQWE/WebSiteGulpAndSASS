@@ -1,5 +1,6 @@
 .prezentation {
   position: relative;
+  border-radius: 0.5rem;
 
   &__img {
     width: 100%;
@@ -7,6 +8,7 @@
   }
 
   &__overlay {
+    border-radius: 1rem;
     position: absolute;
     top: 0;
     left: 0;

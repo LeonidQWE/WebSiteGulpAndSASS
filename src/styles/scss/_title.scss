@@ -1,0 +1,18 @@
+.title {
+  &__text {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 140%;
+    font-weight: 700;
+
+    &_color-black {
+      color: #131313;
+    }
+
+    &_color-white {
+      color: #fff;
+    }
+  }
+}
+
+
