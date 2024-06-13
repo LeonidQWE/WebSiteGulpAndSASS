@@ -1,0 +1,19 @@
+.why-choose-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  &__text {
+    flex: 0 1 31%;
+  }
+
+  &__description {
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    line-height: 130%;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+}
+
