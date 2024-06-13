@@ -1,0 +1,34 @@
+.what-we-do {
+  &__subtitle {
+    margin-bottom: 1rem;
+    color: #ee0000;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+
+  &__content {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    flex: 0 1 31%;
+  }
+
+  &__img-container {
+    flex: 0 1 31%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

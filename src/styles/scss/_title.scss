@@ -5,12 +5,18 @@
     line-height: 140%;
     font-weight: 700;
 
-    &_color-black {
-      color: #131313;
+    &_color {
+      &-black {
+        color: #131313;
+      }
+
+      &-white {
+        color: #fff;
+      }
     }
 
-    &_color-white {
-      color: #fff;
+    &_position-center {
+      text-align: center;
     }
   }
 }
