@@ -2,12 +2,18 @@
   width: 100%;
   min-width: 23rem;
 
-  &_bg-color-black {
-    background-color: #000;
-  }
+  &_bg-color {
+    &-black {
+      background-color: #000;
+    }
 
-  &_bg-color-gray {
-    background-color: #f4f4f4;
+    &-gray {
+      background-color: #f4f4f4;
+    }
+
+    &-red {
+      background-color: #ee0000;
+    }
   }
 
   &_padding-x-sm {
