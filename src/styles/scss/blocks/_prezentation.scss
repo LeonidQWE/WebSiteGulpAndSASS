@@ -19,13 +19,10 @@
   }
 
   &__title {
+    @include fonts($font-color-white, $font-size-7_0-rem, 100%, $font-weight-bolder);
     z-index: 2;
     text-transform: uppercase;
     margin: 0;
-    color: #fff;
-    font-weight: 700;
-    font-size: 7rem;
-    line-height: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -33,7 +30,7 @@
   }
 
   &__word {
-    color: #ff0000;
+    color: $font-color-red;
   }
 }
 

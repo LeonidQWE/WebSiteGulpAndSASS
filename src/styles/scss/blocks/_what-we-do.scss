@@ -1,11 +1,8 @@
 .what-we-do {
   &__subtitle {
+    @include fonts($font-color-red, $font-size-2_0-rem, 120%, $font-weight-bolder);
     margin-bottom: 1rem;
-    color: #ee0000;
     text-align: center;
-    font-size: 2rem;
-    line-height: 120%;
-    font-weight: 700;
   }
 
   &__content {
