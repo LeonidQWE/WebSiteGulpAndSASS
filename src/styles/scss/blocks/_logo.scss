@@ -8,10 +8,7 @@
   }
 
   &__text {
-    color: #fff;
+    @include fonts($font-color-white, $font-size-2_6-rem, 110%, $font-weight-bolder);
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2.6rem;
-    line-height: 110%;
   }
 }

@@ -55,11 +55,9 @@
     }
 
     &__link {
+      @include fonts($font-color-white, $font-size-2_0-rem, 130%, $font-weight-bold);
       text-decoration: none;
       text-transform: uppercase;
-      color: #fff;
-      font-size: 2rem;
-      line-height: 130%;
     }
   }
 }

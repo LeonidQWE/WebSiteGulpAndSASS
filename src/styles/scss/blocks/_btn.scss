@@ -1,15 +1,13 @@
 .btn {
+  @include fonts($font-color-black, $font-size-1_8-rem, 130%, $font-weight-normal);
   border: 1px solid transparent;
-  background-color: #fff;
   border-radius: 4rem;
-  font-size: 1.8rem;
-  line-height: 130%;
   padding: 1rem 2rem;
 
   &:hover {
     cursor: pointer;
     background-color: #131313;
-    color: #fff;
+    color: $font-color-white;
   }
 }
 

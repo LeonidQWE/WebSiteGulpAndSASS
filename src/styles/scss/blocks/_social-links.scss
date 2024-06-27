@@ -29,10 +29,8 @@
   }
 
   &__text {
+    @include fonts($font-color-white, $font-size-1_6-rem, 130%, $font-weight-light);
     font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 130%;
   }
 }
 

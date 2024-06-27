@@ -1,9 +1,6 @@
 .links {
   &__title {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 130%;
+    @include fonts($font-color-white, $font-size-1_6-rem, 130%, $font-weight-normal);
   }
 
   &__list {
@@ -21,14 +18,11 @@
   }
 
   &__link {
+    @include fonts($font-color-white, $font-size-1_6-rem, 130%, $font-weight-light);
     text-decoration: none;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 130%;
 
     &:active {
-      color: #ff0000;
+      color: $font-color-red;
     }
   }
 }

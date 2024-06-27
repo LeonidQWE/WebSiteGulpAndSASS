@@ -14,15 +14,12 @@
   }
 
   &__link {
-    color: #fff;
+    @include fonts($font-color-white, $font-size-1_8-rem, 120%, $font-weight-bold);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 120%;
 
     &:active {
-      color: red;
+      color: $font-color-red;
     }
   }
 }
