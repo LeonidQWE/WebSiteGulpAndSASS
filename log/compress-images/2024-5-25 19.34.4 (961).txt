@@ -1,0 +1,8 @@
+File from: [./src/images/prezentationImg.png]
+
+File to: [./dist/images/prezentationImg.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Leonid\Proga\Frontend\WebSiteGulpAndSASS\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o ./dist/images/prezentationImg.png ./src/images/prezentationImg.png
+  error: failed writing image to ./dist/images/prezentationImg.png (16)

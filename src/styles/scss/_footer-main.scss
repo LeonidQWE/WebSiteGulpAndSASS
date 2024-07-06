@@ -1,0 +1,33 @@
+.footer-main {
+  &__info {
+      flex: 0 1 35%;
+      padding: 6rem 3rem 6rem 0;
+  }
+
+  &__description {
+    font-family: "Roboto";
+    color: #fff;
+    font-weight: 300;
+    line-height: 130%;
+    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  &__links {
+    font-family: "Roboto";
+    padding: 8rem 4rem;
+
+    &_size-sm {
+      flex: 0 1 15%;
+    }
+
+    &_size-md {
+      flex: 0 1 25%;
+    }
+
+    &_size-bg {
+      flex: 0 1 25%;
+    }
+  }
+}
