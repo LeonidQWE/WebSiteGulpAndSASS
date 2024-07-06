@@ -5,19 +5,13 @@
   height: 47%;
 
   &__title {
+    @include fonts($font-color-dark-gray, $font-size-2_4-rem, 150%, $font-weight-bolder);
     margin-top: 2rem;
-    color: #464646;
-    font-size: 2.4rem;
-    line-height: 150%;
-    font-weight: 700;
   }
 
   &__description {
-    color: #787878;
+    @include fonts($font-color-light-gray, $font-size-1_8-rem, 130%, $font-weight-normal);
     font-family: 'Roboto';
-    font-size: 1.8rem;
-    line-height: 130%;
-    font-weight: 400;
     margin-top: 1rem;
   }
 }

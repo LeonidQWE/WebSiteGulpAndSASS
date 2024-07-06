@@ -1,10 +1,7 @@
 .footer {
   &__description {
+    @include fonts($font-color-white, $font-size-1_8-rem, 130%, $font-weight-light);
     font-family: "Roboto";
-    color: #fff;
-    font-weight: 300;
-    line-height: 130%;
-    font-size: 1.8rem;
   }
 
   &__main {
@@ -16,13 +13,8 @@
     }
   }
 
-
-
   &__copyright {
-    color: #fff;
-    font-size: 1.6rem;
-    line-height: 120%;
-    font-weight: 400;
+    @include fonts($font-color-white, $font-size-1_6-rem, 120%, $font-weight-normal);
     text-align: center;
   }
 }
