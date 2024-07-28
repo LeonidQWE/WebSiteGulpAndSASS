@@ -5,16 +5,14 @@ import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 // newer - Allows you to track code in development files
 import newer from 'gulp-newer';
-// webp - Allows you to convert images to webp
-import webp from 'gulp-webp';
+
 import { PATHS } from '../configs/index.js';
 
-export default function images() {
+export default function minImages() {
   return gulp.src(PATHS['images'].src, { encoding: false})
-            .pipe(newer(PATHS['images'].dist))
-            .pipe(imagemin())
-            .pipe(webp({quality: 75}))
-            .pipe(gulp.dest(PATHS['images'].dist))
+        .pipe(newer(PATHS['images'].dist))
+        .pipe(imagemin())
+        .pipe(gulp.dest(PATHS['images'].dist))
 }
 
 // export default async function images() {
