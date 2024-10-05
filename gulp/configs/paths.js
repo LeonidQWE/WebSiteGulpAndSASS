@@ -1,12 +1,12 @@
 export const PATHS = {
   main: './dist',
   styles: {
-    src: './src/styles/scss/**/*.scss',
+    src: './src/styles/**/*.scss',
     dist: './dist/styles/',
   },
   images: {
-    src: './src/images/*',
-    dist: './dist/images/',
+    src: './src/assets/images/*',
+    dist: './dist/assets/images/',
   },
   scripts: {
     src: './src/scripts/**/*.js',
