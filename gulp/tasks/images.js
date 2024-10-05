@@ -3,17 +3,23 @@ import gulp from 'gulp';
 // import compressImages from 'compress-images';
 // imagemin - Minify PNG, JPEG, GIF and SVG images
 import imagemin from 'gulp-imagemin';
-// newer - Allows you to track code in development files
-import newer from 'gulp-newer';
+// webp - Allows you to convert images to webp
+import webp from 'gulp-webp';
 
 import { PATHS } from '../configs/index.js';
 
-export default function minImages() {
-  return gulp.src(PATHS['images'].src, { encoding: false})
-        .pipe(newer(PATHS['images'].dist))
-        .pipe(imagemin())
-        .pipe(gulp.dest(PATHS['images'].dist))
+export default async function images () {
+  try {
+    return gulp.src(PATHS['images'].src, { encoding: false})
+              .pipe(imagemin())
+              .pipe(gulp.dest(PATHS['images'].dist))
+              .pipe(webp())
+              .pipe(gulp.dest(PATHS['images'].dist))
+  } catch (error) {
+    console.log(error)
+  }
 }
+
 
 // export default async function images() {
 //   try {
