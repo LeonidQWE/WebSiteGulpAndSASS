@@ -1,7 +1,9 @@
-@import './normalize';
-@import './scaffold';
 @import './variables/variables';
 @import './mixins/mixins';
+@import './base/base';
+
+@import './normalize';
+@import './scaffold';
 
 @import './blocks/layout';
 @import './blocks/container';
