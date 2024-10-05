@@ -15,6 +15,10 @@ export const PATHS = {
   html: {
     src: './src/*.html',
     dist: './dist/'
+  },
+  fonts: {
+    src: './src/assets/fonts/**/*.woff2',
+    dist: './dist/assets/fonts/',
   }
 }
 
