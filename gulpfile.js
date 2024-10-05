@@ -11,7 +11,7 @@ import {
 } from './gulp/tasks/index.js';
 import { PATHS } from './gulp/configs/index.js';
 
-const { series, parallel, watch} = gulp;
+const { series, watch} = gulp;
 
 function devServer () {
   browserSync.init({
@@ -28,6 +28,6 @@ function devServer () {
   watch(PATHS['fonts'].src, series(fonts, reload))
 }
 
-const development = series(cleanAll, parallel(html, styles, scripts), fonts, images, devServer)
+const development = series(cleanAll, html, styles, scripts, fonts, images, devServer)
 development.displayName = 'dev'
 export { development }
