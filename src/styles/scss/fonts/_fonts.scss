@@ -1,0 +1,51 @@
+// Poppins
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  src: local("Poppins"), url($fonts-path + "Poppins/Poppins-Regular.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 500;
+  src: local("Poppins"), url($fonts-path + "Poppins/Poppins-Medium.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  src: local("Poppins"), url($fonts-path + "Poppins/Poppins-Bold.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+// Roboto
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 300;
+  src: local("Roboto"), url($fonts-path + "Poboto/Roboto-Light.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  src: local("Roboto"), url($fonts-path + "Roboto/Roboto-Regular.woff2") format("woff2");
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
