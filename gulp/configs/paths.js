@@ -17,7 +17,7 @@ export const PATHS = {
     dist: './dist/'
   },
   fonts: {
-    src: './src/assets/fonts/**/*',
+    src: './src/assets/fonts/**/*.woff2',
     dist: './dist/assets/fonts/',
   }
 }
