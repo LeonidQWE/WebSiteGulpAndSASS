@@ -3,8 +3,7 @@ import browserSync from 'browser-sync';
 import {
   cleanAll,
   styles,
-  minImages,
-  webpImages,
+  images,
   scripts,
   html,
   reload
@@ -22,11 +21,11 @@ function devServer () {
 
   watch(PATHS['html'].dist).on('change', browserSync.reload)
   watch(PATHS['styles'].src, series(styles, reload))
-  watch(PATHS['images'].src, series(webpImages, minImages, reload))
+  watch(PATHS['images'].src, series(images, reload))
   watch(PATHS['scripts'].src, series(scripts, reload))
   watch(PATHS['html'].src, series(html, reload))
 }
 
-const development = series(cleanAll, parallel(html, styles, scripts), webpImages, minImages, devServer)
+const development = series(cleanAll, parallel(html, styles, scripts), images, devServer)
 development.displayName = 'dev'
 export { development }
