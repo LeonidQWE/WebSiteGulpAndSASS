@@ -6,7 +6,8 @@ import {
   images,
   scripts,
   html,
-  reload
+  reload,
+  fonts
 } from './gulp/tasks/index.js';
 import { PATHS } from './gulp/configs/index.js';
 
@@ -24,8 +25,9 @@ function devServer () {
   watch(PATHS['images'].src, series(images, reload))
   watch(PATHS['scripts'].src, series(scripts, reload))
   watch(PATHS['html'].src, series(html, reload))
+  watch(PATHS['fonts'].src, series(fonts, reload))
 }
 
-const development = series(cleanAll, parallel(html, styles, scripts), images, devServer)
+const development = series(cleanAll, parallel(html, styles, scripts), fonts, images, devServer)
 development.displayName = 'dev'
 export { development }
