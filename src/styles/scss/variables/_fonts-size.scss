@@ -1,8 +1,12 @@
-$font-size-1_6-rem: 1.6rem;
-$font-size-1_8-rem: 1.8rem;
-$font-size-2_0-rem: 2rem;
-$font-size-2_4-rem: 2.4rem;
-$font-size-2_6-rem: 2.6rem;
-$font-size-5_0-rem: 5rem;
-$font-size-5_8-rem: 5.8rem;
-$font-size-7_0-rem: 7rem;
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 7;
+$h2-font-size: $font-size-base * 5.8;
+$h3-font-size: $font-size-base * 5;
+$h4-font-size: $font-size-base * 2.4;
+
+$font-size-normal: $font-size-base * 1.6;
+$font-size-semimedium: $font-size-base * 1.8;
+$font-size-medium: $font-size-base * 2;
+$font-size-lg: $font-size-base * 2.6;
+
