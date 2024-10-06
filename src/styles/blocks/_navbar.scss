@@ -1,0 +1,58 @@
+.navbar {
+  background-color: $dark;
+
+  &__cross-btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    padding: 1rem 2rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  &__link {
+    @include fonts($font-poppins, $font-size-semimedium, $line-height-sm, $font-weight-medium);
+    color: $light;
+    text-transform: uppercase;
+
+    &:active {
+      color: $danger;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+
+    &__cross-btn {
+      display: block;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    &__cross-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &_active {
+      display: flex;
+    }
+  }
+}

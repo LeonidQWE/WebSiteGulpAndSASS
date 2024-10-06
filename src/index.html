@@ -8,82 +8,65 @@
 </head>
 <body>
   <div class="layout">
+    <div class="layout__container">
+      <header class="layout__header header">
+        <div class="header__section">
+          <div class="header__container">
+            <div class="header__logo logo">
+              <svg class="logo__icon" aria-hidden="true" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H22.4579C32.3686 0 40.4028 8.03418 40.4028 17.9448V40.4028H17.9448C8.03417 40.4028 0 32.3686 0 22.4579V0Z" fill="#131313"/>
+                <path d="M62.2206 0L62.2206 24.3839C62.2206 34.2945 54.1864 42.3287 44.2757 42.3287L19.8919 42.3287L19.8919 17.9448C19.8919 8.03417 27.9261 -1.49906e-06 37.8367 -1.06585e-06L62.2206 0Z" fill="#EE0000"/>
+                <path d="M40.4028 21.8179L40.4028 44.2758C40.4028 54.1865 32.3686 62.2206 22.4579 62.2206L-9.39546e-06 62.2206L-8.41379e-06 39.7627C-7.98058e-06 29.852 8.03418 21.8179 17.9448 21.8179L40.4028 21.8179Z" fill="#EE0000"/>
+                <path d="M18.585 19.0906H44.2757C54.1864 19.0906 62.2206 27.1248 62.2206 37.0354V62.7262H36.5298C26.6191 62.7262 18.585 54.692 18.585 44.7814V19.0906Z" fill="#131313"/>
+              </svg>
+              <span class="logo__text">logo<br>here</span>
+            </div>
 
-    <!-- Надо фиксить -->
-    <!-- <header class="layout__header header">
-      <div class="header__container container container_bg-color-black container_padding-y-md container_padding-x-md">
-        <div class="header__logo logo">
-          <svg class="logo__icon" aria-hidden="true" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H22.4579C32.3686 0 40.4028 8.03418 40.4028 17.9448V40.4028H17.9448C8.03417 40.4028 0 32.3686 0 22.4579V0Z" fill="#131313"/>
-            <path d="M62.2206 0L62.2206 24.3839C62.2206 34.2945 54.1864 42.3287 44.2757 42.3287L19.8919 42.3287L19.8919 17.9448C19.8919 8.03417 27.9261 -1.49906e-06 37.8367 -1.06585e-06L62.2206 0Z" fill="#EE0000"/>
-            <path d="M40.4028 21.8179L40.4028 44.2758C40.4028 54.1865 32.3686 62.2206 22.4579 62.2206L-9.39546e-06 62.2206L-8.41379e-06 39.7627C-7.98058e-06 29.852 8.03418 21.8179 17.9448 21.8179L40.4028 21.8179Z" fill="#EE0000"/>
-            <path d="M18.585 19.0906H44.2757C54.1864 19.0906 62.2206 27.1248 62.2206 37.0354V62.7262H36.5298C26.6191 62.7262 18.585 54.692 18.585 44.7814V19.0906Z" fill="#131313"/>
-          </svg>
-          <span class="logo__text">logo<br>here</span>
-        </div>
+            <nav class="header__navbar navbar" id="navbar">
+              <button class="navbar__cross-btn" id="closeMenuBtn">
+                <svg class="navbar__cross-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.2807 18.2198C19.3504 18.2895 19.4056 18.3722 19.4433 18.4632C19.4811 18.5543 19.5005 18.6519 19.5005 18.7504C19.5005 18.849 19.4811 18.9465 19.4433 19.0376C19.4056 19.1286 19.3504 19.2114 19.2807 19.281C19.211 19.3507 19.1283 19.406 19.0372 19.4437C18.9462 19.4814 18.8486 19.5008 18.7501 19.5008C18.6515 19.5008 18.5539 19.4814 18.4629 19.4437C18.3718 19.406 18.2891 19.3507 18.2194 19.281L12.0001 13.0607L5.78068 19.281C5.63995 19.4218 5.44907 19.5008 5.25005 19.5008C5.05103 19.5008 4.86016 19.4218 4.71943 19.281C4.5787 19.1403 4.49963 18.9494 4.49963 18.7504C4.49963 18.5514 4.5787 18.3605 4.71943 18.2198L10.9397 12.0004L4.71943 5.78104C4.5787 5.64031 4.49963 5.44944 4.49963 5.25042C4.49963 5.05139 4.5787 4.86052 4.71943 4.71979C4.86016 4.57906 5.05103 4.5 5.25005 4.5C5.44907 4.5 5.63995 4.57906 5.78068 4.71979L12.0001 10.9401L18.2194 4.71979C18.3602 4.57906 18.551 4.5 18.7501 4.5C18.9491 4.5 19.1399 4.57906 19.2807 4.71979C19.4214 4.86052 19.5005 5.05139 19.5005 5.25042C19.5005 5.44944 19.4214 5.64031 19.2807 5.78104L13.0604 12.0004L19.2807 18.2198Z" fill="#fff"/>
+                </svg>
+              </button>
 
-        <nav class="header__navbar navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">home</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">about us</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">solar initiatives</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">our services</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">community</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">aesthetics</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header__burger burger">
-          <button class="burger__btn" id="openBurgerMenuBtn">
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
-
-          <div class="burger__menu" id="burgerMenu">
-            <button class="burger__close-btn" id="closeBurgerMenuBtn">
-              <img src="./assets/images/crossForBurgerMenu.svg" alt="">
-            </button>
-
-            <nav class="burger__navbar">
-              <ul class="burger__list">
-                <li class="burger__item">
-                  <a href="#" class="burger__link">home</a>
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">home</a>
                 </li>
-                <li class="burger__item">
-                  <a href="#" class="burger__link">about us</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">about us</a>
                 </li>
-                <li class="burger__item">
-                  <a href="#" class="burger__link">solar initiatives</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">solar initiatives</a>
                 </li>
-                <li class="burger__item">
-                  <a href="#" class="burger__link">our services</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">our services</a>
                 </li>
-                <li class="burger__item">
-                  <a href="#" class="burger__link">community</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">community</a>
                 </li>
-                <li class="burger__item">
-                  <a href="#" class="burger__link">aesthetics</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">aesthetics</a>
                 </li>
               </ul>
             </nav>
+
+            <button class="header__burger-btn burger-btn" id="openMenuBtn">
+              <div class="burger-btn__line"></div>
+              <div class="burger-btn__line"></div>
+              <div class="burger-btn__line"></div>
+            </button>
           </div>
         </div>
-      </div>
-    </header> -->
+      </header>
 
+      <main class="layout__main main"></main>
+
+      <footer class="layout__footer footer"></footer>
+    </div>
+    <!-- Надо фиксить -->
+
+    
     <!-- <main class="layout__main main"> -->
       <!-- Start prezentation block Надо фиксить -->
       <!-- <div class="main__container container container_padding-y-md container_padding-x-md">
