@@ -3,14 +3,13 @@
 @import './base/base';
 @import './fonts/fonts';
 
-// @import './scaffold';
-
-// @import './blocks/layout';
+@import './blocks/body';
+@import './blocks/layout';
+@import './blocks/header';
+@import './blocks/logo';
+@import './blocks/navbar';
+@import './blocks/burger-btn';
 // @import './blocks/container';
-// @import './blocks/header';
-// @import './blocks/logo';
-// @import './blocks/navbar';
-// @import './blocks/burger';
 // @import './blocks/social-links';
 // @import './blocks/btn';
 // @import './blocks/prezentation';

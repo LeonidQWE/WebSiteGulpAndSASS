@@ -1,24 +1,20 @@
 // Elements
-const openBurgerMenuBtnElement = document.getElementById('openBurgerMenuBtn');
-const closeBurgerMenuBtnElement = document.getElementById('closeBurgerMenuBtn');
+const openMenuBtnElement = document.getElementById('openMenuBtn');
+const closeMenuBtnElement = document.getElementById('closeMenuBtn');
+const navbarElement = document.getElementById('navbar');
+const bodyElement = document.body;
 
 // Listeners
-openBurgerMenuBtnElement.addEventListener('click', handleClickOpenMenu);
-closeBurgerMenuBtnElement.addEventListener('click', handleClickCloseMenu);
+openMenuBtnElement.addEventListener('click', handleClickToggleMenu);
+closeMenuBtnElement.addEventListener('click', handleClickToggleMenu);
 
 // Functions
-function handleClickOpenMenu() {
-  toggleClassess();
-}
-
-function handleClickCloseMenu() {
+function handleClickToggleMenu() {
   toggleClassess();
 }
 
 // Helpers
 function toggleClassess() {
-  const burgerMenuElement = document.getElementById('burgerMenu');
-  const bodyElement = document.getElementsByTagName('body')[0];
-  burgerMenuElement.classList.toggle('burger__menu_display-block');
-  bodyElement.classList.toggle('hidden');
+  navbarElement.classList.toggle('navbar_active');
+  bodyElement.classList.toggle('body_hidden');
 }
