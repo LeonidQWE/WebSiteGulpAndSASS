@@ -1,0 +1,23 @@
+.why-choose-us {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__presentation,
+  &__card {
+    flex: 1 1 calc((100% - 3rem * 2) / 3);
+  }
+
+  &__card {
+    padding: $card-padding-y-md $card-padding-x-sm;
+  }
+
+  &__description {
+    @include fonts($font-roboto, $font-size-semimedium, $line-height-sm, $font-weight-normal);
+    margin-top: 1.3rem;
+    color: $gray-500;
+  }
+}

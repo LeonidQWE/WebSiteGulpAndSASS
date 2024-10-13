@@ -3,7 +3,12 @@
     padding: $section-padding-y-sm $section-padding-x-md;
   }
 
-  &__our-expertise {
+  &__our-expertise,
+  &__why-choose-us {
     padding: $section-padding-y-semibg $section-padding-x-bg;
+  }
+
+  &__why-choose-us {
+    background-color: $gray-100;
   }
 }
