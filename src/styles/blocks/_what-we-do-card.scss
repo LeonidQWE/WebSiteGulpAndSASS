@@ -1,0 +1,23 @@
+.what-we-do-card {
+  border-radius: 1rem;
+  background-color: $gray-100;
+  text-align: left;
+
+  &__icon {
+    display: block;
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  &__title {
+    @include fonts($font-poppins, $h3-font-size, $line-height-lg, $font-weight-bold);
+    margin-top: 2rem;
+    color: $gray-400;
+  }
+
+  &__text {
+    @include fonts($font-roboto, $font-size-semimedium, $line-height-base, $font-weight-normal);
+    color: $secondary;
+    margin-top: 1rem;
+  }
+}
