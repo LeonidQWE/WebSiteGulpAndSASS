@@ -8,7 +8,15 @@
     padding: $section-padding-y-semibg $section-padding-x-bg;
   }
 
+  &__who-we-are {
+    padding: $section-padding-y-semimd $section-padding-x-bg;
+  }
+
   &__why-choose-us {
     background-color: $gray-100;
+  }
+
+  &__who-we-are {
+    background-color: $danger;
   }
 }
