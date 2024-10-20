@@ -1,0 +1,35 @@
+.why-choose-us-card {
+  border-radius: 1rem;
+  background-color: $white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $danger;
+
+    .why-choose-us-card__number,
+    .why-choose-us-card__title,
+    .why-choose-us-card__text {
+      color: #fff;
+    }
+
+  }
+
+  &__number {
+    @include fonts($font-poppins, 5.8rem, $line-height-sm, $font-weight-bold);
+    color: $danger;
+  }
+
+  &__title {
+    @include fonts($font-poppins, $h3-font-size, $line-height-sm, $font-weight-bold);
+    color: $gray-300;
+    margin-top: 3rem;
+  }
+
+  &__text {
+    @include fonts($font-roboto, $font-size-semimedium, $line-height-sm, $font-weight-normal);
+    color: $gray-200;
+    margin-top: 1.5rem;
+  }
+}
+
+

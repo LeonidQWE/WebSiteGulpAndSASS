@@ -1,0 +1,7 @@
+.title {
+  @include fonts($font-poppins, $h2-font-size, $line-height-lg, $font-weight-bold);
+
+  &_color-light {
+    color: $light;
+  }
+}

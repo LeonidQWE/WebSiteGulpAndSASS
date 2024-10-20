@@ -1,15 +1,10 @@
-.our-experience-card {
-  flex: 0 1 23%;
-  position: relative;
-
+.our-expertise-card {
   &:hover {
     cursor: pointer;
-    transform: scale(1.2);
   }
 
   &__background {
-    width: 100%;
-    height: auto;
+    border-radius: 1rem;
   }
 
   &__rectangle {
@@ -29,16 +24,18 @@
     z-index: 2;
   }
 
+  &__title,
+  &__description {
+    color: $light;
+  }
+
   &__title {
-    @include fonts($font-color-white, $font-size-2_4-rem, 130%, $font-weight-bolder);
+    @include fonts($font-poppins, $h3-font-size, $line-height-base, $font-weight-bold);
   }
 
   &__description {
-    @include fonts($font-color-white, $font-size-1_6-rem, 120%, $font-weight-normal);
+    @include fonts($font-roboto, $font-size-normal, $line-height-base, $font-weight-normal);
     width: 90%;
     margin-top: 1rem;
-    font-family: 'Roboto';
   }
 }
-
-
