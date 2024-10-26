@@ -1,0 +1,32 @@
+.footer-links {
+  &__title {
+    @include fonts($font-roboto, $font-size-normal, $line-height-lg, $font-weight-normal);
+    color: $light;
+  }
+
+  &__list {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    padding: 1rem 0;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__link {
+    @include fonts($font-roboto, $font-size-normal, $line-height-lg, $font-weight-light);
+    color: $light;
+
+    &:active {
+      color: $danger;
+    }
+  }
+
+  &__social-links {
+    margin-top: 2rem;
+
+  }
+}
