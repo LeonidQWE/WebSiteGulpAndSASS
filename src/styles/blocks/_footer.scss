@@ -1,0 +1,35 @@
+.footer {
+  background-color: $dark;
+
+  &__header {
+    padding: $section-padding-y-semimd $section-padding-x-bg;
+  }
+
+  &__header-text {
+    @include fonts($font-roboto, $font-size-semimedium, $line-height-lg, $font-weight-light);
+    color: $light;
+  }
+
+  &__separator {
+    width: 100%;
+    height: 0.1rem;
+    background-color: hsla(0, 0%, 100%, 0.2);
+  }
+
+  &__main {
+    padding: $section-padding-y-sm $section-padding-x-bg;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__copyright {
+    padding: $section-padding-y-semism $section-padding-x-bg;
+    text-align: center;
+  }
+
+  &__copyright-text {
+    @include fonts($font-poppins, $font-size-normal, $line-height-lg, $font-weight-normal);
+    color: $light;
+    text-transform: capitalize;
+  }
+}

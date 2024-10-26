@@ -1,0 +1,47 @@
+.who-we-are {
+  &__container {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__description {
+    color: $light;
+    flex: 0 1 45%;
+  }
+
+  &__title {
+    margin-top: 5rem;
+  }
+
+  &__text {
+    @include fonts($font-poppins, $font-size-semimedium, $line-height-base, $font-weight-normal);
+    margin-top: 3rem;
+  }
+
+  &__control {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    padding: 0 0 3rem 0;
+  }
+
+  &__btn {
+    padding: 1rem 2rem;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__img-container:nth-child(2) {
+    position: absolute;
+    right: -65%;
+    top: 15%;
+  }
+
+  &__img {
+    border-radius: 1rem;
+  }
+}
+

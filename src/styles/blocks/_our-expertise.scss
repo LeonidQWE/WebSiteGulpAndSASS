@@ -1,0 +1,17 @@
+.our-expertise {
+  &__cards {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__card {
+    flex: 0 1 calc((100% - 3rem * 3) / 4);
+    position: relative;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

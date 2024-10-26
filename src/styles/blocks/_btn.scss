@@ -1,0 +1,13 @@
+.btn {
+  @include fonts($font-poppins, $font-size-semimedium, $line-height-base, $font-weight-normal);
+  color: $dark;
+  background-color: $light;
+  border-radius: 4rem;
+
+  &:hover {
+    background-color: $dark;
+    color: $light;
+  }
+}
+
+

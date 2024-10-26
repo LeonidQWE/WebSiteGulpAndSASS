@@ -1,0 +1,34 @@
+.footer-main {
+  &__info {
+    padding: 6rem 3rem 6rem 0;
+  }
+
+  &__column {
+    &_size-sm {
+      flex: 0 1 15%;
+    }
+
+    &_size-md {
+      flex: 0 1 25%;
+    }
+
+    &_size-lg {
+      flex: 0 1 35%;
+    }
+
+    &:not(:last-of-type) {
+      border-right: 1px solid #ffffff33;
+    }
+  }
+
+  &__description {
+    @include fonts($font-roboto, $font-size-normal, $line-height-lg, $font-weight-light);
+    margin-top: 2rem;
+    color: $light;
+  }
+
+  &__links {
+    padding: 8rem 3rem;
+  }
+}
+

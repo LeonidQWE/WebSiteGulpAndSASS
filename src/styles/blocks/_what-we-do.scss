@@ -1,0 +1,39 @@
+.what-we-do {
+  &__container {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include fonts($font-poppins, $font-size-medium, $line-height-sm, $font-weight-bold);
+    color: $danger;
+  }
+
+  &__content {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cards,
+  &__img-container {
+    flex: 0 1 calc((100% - 3rem * 2) / 3);
+  }
+
+  &__card {
+    padding: $card-padding-x-bg;
+    height: 47%;
+  }
+}
+
