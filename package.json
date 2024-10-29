@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/LeonidQWE/WebSiteGulpAndSASS/issues"
   },
-  "homepage": "https://github.com/LeonidQWE/WebSiteGulpAndSASS#readme",
+  "homepage": "https://LeonidQWE.github.io/WebSiteGulpAndSASS",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
